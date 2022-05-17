@@ -1,11 +1,11 @@
 variable "crn" {
   type        = string
-  default     = "crn:v1:bluemix:public:power-iaas:us-south:a/9fda77ff79b74c74b9300f6926f0684d:e5c441e9-1d14-45e8-a7c5-b9957b78de7a::"
+  default     = "crn:v1:bluemix:public:power-iaas*"
   description = "Power Systems Virtual Server CRN"
 }
 variable "image" {
   type        = string
-  default     = "paytester-seed"
+  default     = "none"
   description = "image"
 }
 variable "storage-type" {
@@ -45,6 +45,6 @@ variable "sys_type" {
 }
 variable "network_name" {
   type        = string
-  default     = "public-192_168_133_32-29-VLAN_2144"
+  default     = "public"
   description = "The network ID or name to assign to the instance, as defined for the selected Power Systems Virtual Server CRN"
 }
